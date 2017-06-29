@@ -1,0 +1,168 @@
+@import "reset";
+@import "fonts";
+
+
+
+.header-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-top: 50px;
+}
+
+.nav_menu {
+	display:flex;
+	width: 73%;
+	border: 1px solid transparent;
+	height: 60px;
+	-webkit-box-shadow: 0px -1px 40px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -1px 40px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px -1px 40px -5px rgba(0,0,0,0.75);
+	padding: 0 170px 0 0px;
+		@media screen and (max-width: 1200px) {
+			padding: 0 55px;
+		}
+}
+
+.header_menu {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Charter";
+	li {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		a {	
+			color: #376988;
+			font-size: 16px;
+			text-transform: capitalize;
+			font-weight: bold;
+			&:hover {
+				position: relative;
+				top:-3px;
+				text-decoration: none;
+				text-shadow: 0px 0px 16px rgba(150, 150, 150, 0.86);
+					&::before {
+						content: "";
+					    display: block;
+					    height: 5px;
+					    position: relative;
+					    left: 0px;
+					    right: 0px;
+					    top:-18px;
+					    background-color: #376988;
+					}
+			}
+
+			
+		}
+
+	}
+}
+
+.head-logo {
+	max-width: 220px;
+    min-height: 190px;
+}
+
+.head_tel {
+	display: inline-flex;
+	position: absolute;
+	top: 135px;
+	font-family: "OpenSansSemibold";
+	color: #9d9d9d;
+	font-size: 18px;
+}
+
+
+// doc-searching
+.searching_doc {
+	margin-bottom: 85px;
+}
+
+.doc-searc_wrap {
+	margin-top: 40px;
+	h1 {
+		font-size: 50px;
+		font-family: "DroidSerifRegular";
+		color: #376988;
+		text-align: center;
+	}
+}
+
+.doc-searc-input {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	input {
+		width: 51%;
+	    height: 50px;
+	    border-radius: 5px;
+	    border: 1px solid #376988;
+	    padding: 0 25px;
+	    font-family: "OpenSansItalic";
+	    &::-webkit-input-placeholder {
+	    	color: #9d9d9d;
+	    }
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.butt {
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #8cc63f;
+	font-family: "OpenSansSemibold";
+	font-weight: bold;
+	color: white;
+	padding: 13px 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 30px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.doc-search_desc {
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	font-size: 14px;
+	color: #a7a7a7;
+	font-family: "OpenSansRegular";
+	letter-spacing: 0.5px;
+}
+
+// hospital description block
+ .hosp_descr-block {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	padding: 65px 0;
+ }
+
+ .hosp-block {
+ 	width: 32%;
+    padding: 10px 20px;
+    background-color: #376988;
+    text-align: center;
+ }
+
+ .block_icon,
+ .block_title {
+ 	display: block;
+ 	width: 100%;
+ 	color: white;
+}
+
+.block_icon {
+	img {
+	max-width: 45px;
+	max-height: 45px;
+	}
+}
